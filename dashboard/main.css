@@ -1,0 +1,88 @@
+root {
+  --dark-cerulean: #124e78;
+  --maastricht-blue: #0b132b;
+  --yankees-blue: #1c2541;
+  --sea-serpent: #5bc0be;
+  --aquamarine: #6fffe9;
+  --react: #00d8ff;
+}
+
+html {
+  background: var(--yankees-blue);
+}
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* .container > div {
+  display: flex;
+  background: var(--yankees-blue);
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: 60vh;
+  align-items: flex-start;
+} */
+
+.app {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "nav-bar reviews average-analysis sentiment-analysis"
+    "nav-bar visitors visitors visitors"
+    "nav-bar footer footer footer";
+  grid-gap: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 50px;
+  height: 83vh;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: nav-bar;
+  background: grey;
+  width: 20rem;
+  height: 97%;
+}
+
+.box-one {
+  grid-area: reviews;
+  background: grey;
+  width: 15rem;
+  height: 20rem;
+}
+.box-two {
+  grid-area: average-analysis;
+  background: grey;
+  width: 15rem;
+  height: 20rem;
+}
+.box-three {
+  grid-area: sentiment-analysis;
+  background: grey;
+  width: 15rem;
+  height: 20rem;
+}
+.box-four {
+  grid-area: visitors;
+  background: grey;
+  height: 20rem;
+}
+h1 {
+  font-size: 20px;
+}
+.nested {
+  background: rgb(109, 106, 106);
+  width: 500px;
+  height: 200px;
+  margin-left: 140px;
+}
+
+.image {
+  border-radius: 50px;
+}
